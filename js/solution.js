@@ -9,10 +9,13 @@
 
   
    let allSiblings = document.querySelectorAll('li');
-
-
-   for(let elem of allSiblings){
-       console.log(elem.innerHTML); 
-   }
-   let arr = Array.from(allSiblings);
-   console.log(arr);
+       console.log(allSiblings.length);
+    
+   let arr = [];
+       for(let elem of allSiblings){
+         arr.push(elem.innerHTML);
+       }
+   
+       console.log(arr);
+   
+  
